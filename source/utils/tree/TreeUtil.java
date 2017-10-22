@@ -3,7 +3,7 @@ package utils.tree;
 public class TreeUtil 
 {
 	private TreeUtil(){}
-	public static <T extends Comparable<T>> void inorder(BstTree<T>.Node root)
+	public static <T extends Comparable<T>> void inorder(AbstractTree<T>.Node root)
 	{
 		if(root != null)
 		{
@@ -12,7 +12,7 @@ public class TreeUtil
 			inorder(root.getRight());
 		}
 	}
-	public static <T extends Comparable<T>> void preorder(BstTree<T>.Node root)
+	public static <T extends Comparable<T>> void preorder(AbstractTree<T>.Node root)
 	{
 		if(root != null)
 		{
@@ -21,7 +21,7 @@ public class TreeUtil
 			preorder(root.getRight());
 		}
 	}
-	public static<T extends Comparable<T>> void postorder(BstTree<T>.Node root)
+	public static<T extends Comparable<T>> void postorder(AbstractTree<T>.Node root)
 	{
 		if(root != null)
 		{
