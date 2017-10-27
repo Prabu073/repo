@@ -1,6 +1,6 @@
 package utils.tree;
 
-public class BstTree<T extends Comparable<T>> extends AbstractTree<T>
+public class BstTree<T extends Comparable<T>> extends AbstractBinaryTree<T>
 {
 	public void insert(T data)
 	{
