@@ -74,7 +74,7 @@ public class NoTwoAdjacentCharaAreSame
 		PriorityQueue<CharFrequency> pq = new PriorityQueue<>(list.size());
 		pq.addAll(list);
 		CharFrequency pf= null;
-		StringBuilder sb = new StringBuilder(20);
+		StringBuilder sb = new StringBuilder(s.length());
 		while(pq.peek() != null)
 		{
 			CharFrequency f = pq.poll();
